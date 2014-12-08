@@ -2,7 +2,7 @@ presets:
   global:
     # Make there's 10GB free before adding more downloads
     free_space:
-      path: /mnt/storage
+      path: /data
       space: 10000
     # Make sure all filenames are Windows safe (for samba)
     pathscrub: windows
@@ -36,17 +36,17 @@ presets:
       reject: [ 'password.txt' ]
     # Limit the frequency of requests to domains so they don't complain about using a bot
     domain_delay:
-      bt-chat.com: 5 seconds
-      torrentz.eu: 5 seconds
-      kat.ph: 5 seconds
-      ezrss.it: 5 seconds
+      bt-chat.com : 5 seconds
+      torrentz.eu : 5 seconds
+      kat.ph      : 5 seconds
+      ezrss.it    : 5 seconds
     deluge:
-      main_file_only: yes
-      user: local
-      pass: lacol
-      addpaused: yes
-      queuetotop: no
-      path: /mnt/tampon/torrent/loading/
+      main_file_only : yes
+      user           : deluge
+      pass           : deluge
+      addpaused      : yes
+      queuetotop     : no
+      path           : /data/downloads/incomplete_torrents/
   rssout:
     make_rss:
       file: ~/downloaded_missing.rss
@@ -56,10 +56,11 @@ presets:
     discover:
       what:
         - listdir:
-          - '/mnt/storage/series/'
-          - '/mnt/storage/animations/'
-          - '/mnt/storage/documentaries/'
-          - '/mnt/storage/missing/'
+          - '/data/video/tv_series/'
+          # - '/mnt/storage/series/'
+          # - '/mnt/storage/animations/'
+          # - '/mnt/storage/documentaries/'
+          # - '/mnt/storage/missing/'
       from:
         - search_rss: https://www.ezrss.it/search/index.php?show_name={{search_term}}&mode=rss
         - search_rss: http://torrentz.eu/feed?q={{search_term}}
