@@ -8,9 +8,9 @@ series:
         #- Fansub-Resistance
     missing_top_shows:
       quality: hdtv+ <=720p !10bit
-      #upgrade: yes
-    #missing_shows:
-      #quality: tvrip+ <=720p !10bit
+      upgrade: yes
+    missing_shows:
+      quality: tvrip+ <=720p !10bit
   #missing_japanimes:
     #- Accel World
     #- 'Albator 78'

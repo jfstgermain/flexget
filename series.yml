@@ -34,57 +34,34 @@ series:
   best:
     - Arrow:
         name_regexp: ^arrow(?!.2009)
-    - Bones
+    - Homeland
     - Breaking Bad
-    - Burn Notice
-    - Continuum
     - Dexter
-    - Defiance
-    - Falling Skies
-    - Fringe
-    - Game of Thrones
-    - Grimm
-    - Hunted
-    - Lost Girl
-    - Nikita
-    - Spartacus
-    - Supernatural
+    - The Walking Dead
+    - The Game
   # These are my other shows, quality isn't extremely important, but I still like to watch them!
   better:
-    - Alphas
-    - Body of Proof
-    - Death Valley
-    - Doctor Who
-    - Elementary
-    - Justified
-    - Leverage
-    - Merlin
-    - Primeval
-    - Once Upon a Time
-    - Primeval New World
-    - Revolution 2012
-    - The Borgias
-    - The Mentalist
-    - The Universe
-    - The Walking Dead
-    - Torchwood
+    - Getting On
+    - How to Get Away With Murder
+    - The Affair
+    - The Missing
   # And this is everything else, quality doesn't matter that much
-  average:
-    - Transporter The Series
-  documentaries:
-    - Snow Babies
-  anime:
-    - Dragons Riders of Berk
-    - 'Star Wars - The Clone Wars'
-    - Tron Uprising
-    - 'Ultimate Spider-Man'
-  japanime:
-    - Naruto Shippuuden:
-        from_group:
-          - HorribleSubs
-          - Taka
-    - One Piece:
-        from_group:
-          - Yibis
-          - HorribleSubs
-          - BKT
+  # average:
+  #   - Transporter The Series
+  # documentaries:
+  #   - Snow Babies
+  # anime:
+  #   - Dragons Riders of Berk
+  #   - 'Star Wars - The Clone Wars'
+  #   - Tron Uprising
+  #   - 'Ultimate Spider-Man'
+  # japanime:
+  #   - Naruto Shippuuden:
+  #       from_group:
+  #         - HorribleSubs
+  #         - Taka
+  #   - One Piece:
+  #       from_group:
+  #         - Yibis
+  #         - HorribleSubs
+  #         - BKT

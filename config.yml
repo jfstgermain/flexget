@@ -73,6 +73,7 @@ presets:
     exists_series:
       - '/data/video/tv_series/'
       - '/data/downloads/incomplete_torrents/'
+      - '/data/downloads/completed_torrents/'
       # - '/data/downloads/completed_torrents/'
     # Look up info on TheTVDB.com to fill in extra info
     thetvdb_lookup: yes
@@ -89,7 +90,7 @@ presets:
     include: [ series.yml ]
     # Add accepted entries to Deluge, queue them to the top and make sure they end up in the correct folder
     set:
-      movedone   : /data/video/tv_series/
+      movedone   : /data/downloads/completed_torrents/
       queuetotop : yes
 
   # I'm always up for new shows, but some I genres I just can't stand. This preset
@@ -165,6 +166,8 @@ tasks:
       regexp: .*(avi|mkv|mp4)$
       path:
         - '/data/video/tv_series/'
+        - '/data/downloads/incomplete_torrents/'
+        - '/data/downloads/completed_torrents/'
         # - '/mnt/storage/series/'
         # - '/mnt/storage/animations/'
         # - '/mnt/storage/documentaries/'
