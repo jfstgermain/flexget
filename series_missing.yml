@@ -33,20 +33,11 @@ series:
     #- Vampire Hunter D
     #- WitchBlade
   missing_top_shows:
-    - Alias
-    - Bones
-    - Burn Notice
-    - Dollhouse
-    - Falling Skies
-    - Fringe
-    - Grimm
-    - Lost Girl
-    - Nikita
-    - 'Spartacus - Blood and Sand'
-    - 'Spartacus Vengeance'
-    - 'Spartacus - Gods of the Arena'
-    - 'Spartacus: War of the Damned'
-    - Supernatural
+    - Homeland
+    - Breaking Bad
+    - Dexter
+    - The Walking Dead
+    - The Game
   #missing_shows:
     #- Alphas
     #- Aeon Flux
