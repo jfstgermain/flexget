@@ -1,4 +1,4 @@
-presets:
+templates:
   global:
     # Make there's 10GB free before adding more downloads
     free_space:
@@ -41,8 +41,8 @@ presets:
       nyaa.eu: 15 seconds
     deluge:
       main_file_only: yes
-      user: deluge
-      pass: deluge
+      username: deluge
+      password: deluge
       path: '/data/downloads/incomplete_torrents/'
   rssout:
     make_rss:
@@ -136,10 +136,13 @@ tasks:
   # All of the TV-related feeds pull in the tv-global preset, this gives
   # all of the necessary rss sources and a few extra configs
 
+  Trakt:
+    include: [ trakt.yml ]
+
   # There are 3 My_TV Shows feeds, the first, tries to get the most wanted qualities
   TV_Shows:
     priority : 10
-    preset   :
+    template   :
       - tv-global
       - tv-shows
       - rssout
@@ -147,18 +150,18 @@ tasks:
   # Feed for the tv-premieres plugin
   Series_Premieres:
     priority : 40
-    preset   :
+    template   :
       - tv-global
       - tv-premieres
       - rssout
 
-  emailfeed:
+  emailtoto:
     interval: 1 days
     rss:
-      url: /~/downloaded.rss
+      url: file:///home/boxee/downloaded.rss
     disable_builtins : [seen]
     accept_all       : yes
-    include          : [ private/smtp.yml ]
+    include          : [ smtp.yml ]
 
   seed_series_db:
     # The find plugin will find all of your existing episodes
@@ -175,5 +178,16 @@ tasks:
         # - '/mnt/tampon/torrent/complete/'
         # - '/mnt/tampon/torrent/to move/'
       recursive: yes
-    preset: tv-global
+    template: tv-global
     manual: yes
+
+schedules:
+  - tasks: 'Trakt'
+    interval:
+      hours: 3
+  - tasks: 'TV_Shows'
+    interval:
+      minutes: 30
+  - tasks: 'Movies-*'
+    interval:
+      hours: 1

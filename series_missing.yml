@@ -38,6 +38,11 @@ series:
     - Dexter
     - The Walking Dead
     - The Game
+  missing_shows:
+    - Getting On
+    - How to Get Away With Murder
+    - The Affair
+    - The Missing
   #missing_shows:
     #- Alphas
     #- Aeon Flux

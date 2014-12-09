@@ -32,8 +32,6 @@ series:
       propers: 12 hours
   # These are my favorite shows, I want the best quality from these
   best:
-    - Arrow:
-        name_regexp: ^arrow(?!.2009)
     - Homeland
     - Breaking Bad
     - Dexter
